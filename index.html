@@ -1,59 +1,141 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Portfolio | Siddhika Kumari</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="left">
-          <h1>Siddhika Kumari</h1>
-        </div>
-        <div class="right">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Skills</a></li>
-            <li><a href="/">Projects</a></li>
-            <li><a href="/">Contact Me</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
 
-    <main>
-      <section class="firstsection">
-        <div class="leftsection">
-          Hi, my name is <span class="purple">Siddhika</span>
-          <div>and I am an aspiring</div>
-          <span id="element"></span>
-        </div>
-        <div class="rightsection">
-          <img src="hero.png" alt="" srcset="" />
-        </div>
-      </section>
-      <hr>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Portfolio | Siddhika Kumari</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
 
-      <section class="secondsection">
-        <h1>About Me</h1>
-      </section>
-    </main>
+<body>
+  <header>
+    <nav>
+      <div class="left">
+        <h1>Siddhika Kumari</h1>
+      </div>
+      <div class="right">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
-    <script>
-      var typed = new Typed("#element", {
-        strings: ["Web Developer", "Graphic Designer", "Web Designer"],
-        typeSpeed: 50,
-      });
-    </script>
-  </body>
+  <main>
+    <section class="firstsection">
+      <div class="leftsection">
+        Hi, my name is <span class="purple">Siddhika</span>
+        <div>and I am an aspiring</div>
+        <span id="element"></span>
+        <div class="hero-buttons">
+          <a href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <div class="rightsection">
+        <img src="hero.png" alt="" srcset="" />
+      </div>
+    </section>
+    <hr>
+
+    <section class="secondsection" id="about">
+      <div>
+        <div class="abouthead">
+          <h1>About Me</h1>
+        </div>
+        <div class="aboutdesc">
+          <p>I am a BCA Graduate who is actively learning web development and building projects to enhance my skills. My
+            current focus is on HTML, CSS, JavaScript, Git and GitHub. Through personal projects such as portfolio
+            websites and web applications, I am gaining practical experience in designing responsive and user-friendly
+            interfaces. I am eager to begin my professional journey in the IT industry and contribute while continuing
+            to learn and grow as a developer.</p>
+        </div>
+      </div>
+    </section>
+    <hr>
+
+    <section class="thirdsection" id="skills">
+      <div>
+        <div class="skillshead">
+          <h1>Skills</h1>
+        </div>
+        <div class="skill-container">
+          <div class="skill">HTML</div>
+          <div class="skill">CSS</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">C</div>
+          <div class="skill">C++</div>
+          <div class="skill">Git</div>
+          <div class="skill">GitHub</div>
+          <div class="skill">VS Code</div>
+        </div>
+      </div>
+    </section>
+    <hr>
+
+    <section class="fourthsection" id="projects">
+      <div>
+        <div class="projecthead">
+          <h1>Projects</h1>
+        </div>
+        <div class="projects-container">
+          <div class="container">
+            <h3>Portfolio Website</h3>
+            <p>Personal portfolio website built using HTML and CSS to showcase my skills,
+              projects and learning journey as a web developer.</p>
+          </div>
+
+          <div class="container">
+            <h3>Upcoming Project</h3>
+            <p>A task management application currently in planning and development.</p>
+          </div>
+
+          <div class="container">
+            <h3>Upcoming Project</h3>
+            <p>A JavaScript-based calculator project to strengthen problem-solving skills.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+
+    <section class="fifthsection" id="contact">
+      <div>
+        <div class="contacthead">
+          <h1>Contact Me</h1>
+        </div>
+        <div class="contactcontainer">
+          <a href="mailto:siddhikakumari829@email.com" target="_blank">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+
+          <a href="https://github.com/siddhika-kumari" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+    </section>
+    <hr>
+  </main>
+
+  <footer>
+    <p>© 2026 Siddhika Kumari</p>
+  </footer>
+
+  <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed("#element", {
+      strings: ["Web Developer", "Graphic Designer", "Web Designer"],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+
 </html>
